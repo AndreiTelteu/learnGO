@@ -1,6 +1,7 @@
 package main
 
 import (
+	"learngo/app/http"
 	routes "learngo/routes"
 
 	"github.com/gofiber/fiber/v2"
@@ -8,6 +9,7 @@ import (
 
 func main() {
 	app := fiber.New()
+	http.Kernel(app)
 	routes.Web(app)
 	app.Listen(":3000")
 }

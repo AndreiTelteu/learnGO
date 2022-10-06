@@ -1,3 +1,4 @@
 
 HI
 {{ Name }}
+{{ Product.Name }}
